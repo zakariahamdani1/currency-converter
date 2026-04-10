@@ -1,38 +1,116 @@
 .App {
   text-align: center;
+  width: 60%;
+  border: 2px solid rgb(218, 94, 23);
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #09264A;
+  border-radius: 10px;
+  min-width: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+  width: 60%;
+  background-color: #eee;
+  color: #09264A;
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App input {
+  display: block;
+  width: 40%;
+  font-size: 1.3em;
+  border: none;
+  border-bottom: 2px solid #eee;
+  margin: 10px auto;
+  background-color: #09264A;
+  color: #eee;
+  outline: none;
+}
+
+.App input:focus {
+  border-bottom: 2px solid orangered;
+}
+
+.App label {
+  display: block;
+  width: 60%;
+  margin: 10px auto;
+  color: #eee;
+  font-size: 1.3em;
+}
+
+.App select {
+  margin: 10px auto;
+  width: 20%;
+  font-size: 1.2em;
+  padding: 3px;
+}
+
+.App span {
+  display: inline-block;
+  width: 20%;
+}
+
+.App button {
+  width: 20%;
+  margin: 10px auto;
+  font-size: 1.2em;
+  padding: 5px;
+  background-color: #ccc;
+  color: #09264A;
+  border: 2px solid rgb(218, 94, 23);
+  border-radius: 8px;
+}
+
+.App button:hover {
+  color: black;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.App p {
+  width: 40%;
+  background-color: #eee;
+  color: #09264A;
+  font-size: 1.2em;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1030px) {
+  .App h1 {
+    width: 80%;
+    font-size: 1.0em;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    .App input {
+    width: 80%;
+    font-size: 1.0em;
   }
-  to {
-    transform: rotate(360deg);
+  .App select {
+    width: 60%;
+    font-size: 0.7em;
   }
+
+  .App label {
+    width: 80%;
+  }
+
+  .App span {
+    width: 40%;
+    font-size: 0.7em;
+  }
+
+  .App button {
+    width: 60%;
+    font-size: 1.0em;
+  }
+  
 }
+
+
+
