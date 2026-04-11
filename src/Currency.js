@@ -7,9 +7,11 @@ function Currency() {
     const [amount, setAmount] = useState(0);
     const [result, setResult] = useState(null);
     const [rates, setRates] = useState({});
+    
+    let API_key = "your API key" // copy your API key here  
 
     useEffect(() => {
-        fetch("http://localhost:3001/rates")
+        fetch(`https://v6.exchangerate-api.com/v6/${API_key}/latest/USD`)
             .then(res => res.json())
             .then(data => {
                 setCurrencies(Object.keys(data.conversion_rates));
